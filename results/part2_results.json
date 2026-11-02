@@ -1,0 +1,338 @@
+{
+  "dataset": {
+    "n_samples": 144,
+    "n_features": 2,
+    "features": [
+      "a",
+      "b"
+    ],
+    "class_counts": {
+      "0": 36,
+      "1": 37,
+      "2": 36,
+      "3": 35
+    },
+    "missing_values": 0,
+    "duplicates": 0
+  },
+  "elbow": {
+    "k": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "inertia": [
+      288.0,
+      177.29804021228193,
+      110.48999257729338,
+      81.2061654887527,
+      61.73324367946276,
+      49.312562955995986,
+      37.48303376075154,
+      32.13252908957175,
+      27.902350646474925,
+      24.364701352682083
+    ],
+    "silhouette": [
+      NaN,
+      0.35385734299926164,
+      0.3972907841343903,
+      0.399983203066822,
+      0.3876283714780466,
+      0.4383603689870086,
+      0.4652850704952688,
+      0.44108753450267524,
+      0.4359001715116109,
+      0.4426070064465866
+    ]
+  },
+  "kmeans_silhouette": {
+    "mean": 0.399983203066822,
+    "per_cluster": {
+      "0": 0.333024423476173,
+      "1": 0.49414808179168246,
+      "2": 0.41685730729695114,
+      "3": 0.422665668370431
+    },
+    "cluster_sizes": {
+      "0": 51,
+      "1": 22,
+      "2": 46,
+      "3": 25
+    }
+  },
+  "dendrogram": {
+    "method": "ward",
+    "last_merges": [
+      2.869198420042731,
+      3.1220379919258154,
+      3.3104955451422726,
+      3.329655255874182,
+      4.3168706405691735,
+      4.89421667057839,
+      7.135667714066084,
+      9.291496835177172,
+      11.466445140903192,
+      13.366064594827122
+    ],
+    "max_distance": 13.366064594827122
+  },
+  "algorithms": [
+    {
+      "name": "Gaussian Mixture",
+      "params": {
+        "n_components": 4,
+        "covariance_type": "full",
+        "n_init": 20
+      },
+      "n_clusters": 4,
+      "n_noise": 0,
+      "noise_share": 0.0,
+      "silhouette": 0.12436554844175861,
+      "ari": 0.5407427914399326,
+      "nmi": 0.5455131314308532,
+      "cluster_sizes": {
+        "0": 47,
+        "1": 43,
+        "2": 42,
+        "3": 12
+      }
+    },
+    {
+      "name": "Spectral Clustering",
+      "params": {
+        "n_clusters": 4,
+        "affinity": "nearest_neighbors",
+        "n_neighbors": 10
+      },
+      "n_clusters": 4,
+      "n_noise": 0,
+      "noise_share": 0.0,
+      "silhouette": 0.31716227218654336,
+      "ari": 0.27203685191817223,
+      "nmi": 0.36965741497546367,
+      "cluster_sizes": {
+        "0": 25,
+        "1": 45,
+        "2": 59,
+        "3": 15
+      }
+    },
+    {
+      "name": "Agglomerative",
+      "params": {
+        "n_clusters": 4,
+        "linkage": "complete"
+      },
+      "n_clusters": 4,
+      "n_noise": 0,
+      "noise_share": 0.0,
+      "silhouette": 0.3556066056438121,
+      "ari": 0.22426550725288252,
+      "nmi": 0.3156263863547635,
+      "cluster_sizes": {
+        "0": 17,
+        "1": 35,
+        "2": 32,
+        "3": 60
+      }
+    },
+    {
+      "name": "Mean Shift",
+      "params": {
+        "bandwidth": 0.6588318991734275,
+        "quantile": 0.1
+      },
+      "n_clusters": 9,
+      "n_noise": 0,
+      "noise_share": 0.0,
+      "silhouette": 0.4552077569034989,
+      "ari": 0.20285766135880473,
+      "nmi": 0.3807656695274744,
+      "cluster_sizes": {
+        "0": 36,
+        "1": 21,
+        "2": 19,
+        "3": 23,
+        "4": 18,
+        "5": 13,
+        "6": 9,
+        "7": 3,
+        "8": 2
+      }
+    },
+    {
+      "name": "BIRCH",
+      "params": {
+        "n_clusters": 4
+      },
+      "n_clusters": 4,
+      "n_noise": 0,
+      "noise_share": 0.0,
+      "silhouette": 0.3733188322266358,
+      "ari": 0.19563124716540575,
+      "nmi": 0.3226254809371766,
+      "cluster_sizes": {
+        "0": 33,
+        "1": 28,
+        "2": 69,
+        "3": 14
+      }
+    },
+    {
+      "name": "Affinity Propagation",
+      "params": {
+        "damping": 0.9,
+        "preference": -3.505951364568696,
+        "preference_percentile": 5
+      },
+      "n_clusters": 9,
+      "n_noise": 0,
+      "noise_share": 0.0,
+      "silhouette": 0.4611451673735483,
+      "ari": 0.1821877063688315,
+      "nmi": 0.3586503042765371,
+      "cluster_sizes": {
+        "0": 11,
+        "1": 27,
+        "2": 23,
+        "3": 19,
+        "4": 16,
+        "5": 7,
+        "6": 20,
+        "7": 19,
+        "8": 2
+      }
+    },
+    {
+      "name": "Bisecting K-Means",
+      "params": {
+        "n_clusters": 4,
+        "n_init": 10
+      },
+      "n_clusters": 4,
+      "n_noise": 0,
+      "noise_share": 0.0,
+      "silhouette": 0.33088851413189396,
+      "ari": 0.17459579100283484,
+      "nmi": 0.2757194953314766,
+      "cluster_sizes": {
+        "0": 34,
+        "1": 16,
+        "2": 49,
+        "3": 45
+      }
+    },
+    {
+      "name": "Ward",
+      "params": {
+        "n_clusters": 4,
+        "linkage": "ward"
+      },
+      "n_clusters": 4,
+      "n_noise": 0,
+      "noise_share": 0.0,
+      "silhouette": 0.3904663953821798,
+      "ari": 0.17221407098975394,
+      "nmi": 0.32516951208014744,
+      "cluster_sizes": {
+        "0": 71,
+        "1": 18,
+        "2": 41,
+        "3": 14
+      }
+    },
+    {
+      "name": "K-Means",
+      "params": {
+        "n_clusters": 4,
+        "n_init": 20
+      },
+      "n_clusters": 4,
+      "n_noise": 0,
+      "noise_share": 0.0,
+      "silhouette": 0.399983203066822,
+      "ari": 0.16741145365915228,
+      "nmi": 0.2837317141868993,
+      "cluster_sizes": {
+        "0": 51,
+        "1": 22,
+        "2": 46,
+        "3": 25
+      }
+    },
+    {
+      "name": "OPTICS",
+      "params": {
+        "min_samples": 10,
+        "xi": 0.05,
+        "cluster_method": "xi"
+      },
+      "n_clusters": 4,
+      "n_noise": 80,
+      "noise_share": 0.5555555555555556,
+      "silhouette": 0.6905093941299377,
+      "ari": 0.10417589911319514,
+      "nmi": 0.24265813559294316,
+      "cluster_sizes": {
+        "0": 10,
+        "1": 21,
+        "2": 20,
+        "3": 13
+      }
+    },
+    {
+      "name": "DBSCAN",
+      "params": {
+        "eps": 0.3,
+        "min_samples": 5
+      },
+      "n_clusters": 4,
+      "n_noise": 30,
+      "noise_share": 0.20833333333333334,
+      "silhouette": 0.34624448527253077,
+      "ari": 0.08578730982028637,
+      "nmi": 0.21962458472169671,
+      "cluster_sizes": {
+        "0": 76,
+        "1": 10,
+        "2": 22,
+        "3": 6
+      }
+    },
+    {
+      "name": "HDBSCAN",
+      "params": {
+        "min_cluster_size": 5,
+        "min_samples": 5
+      },
+      "n_clusters": 3,
+      "n_noise": 26,
+      "noise_share": 0.18055555555555555,
+      "silhouette": 0.32822295143974495,
+      "ari": 0.026336210745128222,
+      "nmi": 0.14373973257431,
+      "cluster_sizes": {
+        "0": 7,
+        "1": 10,
+        "2": 101
+      }
+    }
+  ],
+  "best_by_ari": "Gaussian Mixture",
+  "best_metrics": {
+    "name": "Gaussian Mixture",
+    "ari": 0.5407427914399326,
+    "nmi": 0.5455131314308532,
+    "silhouette": 0.12436554844175861,
+    "n_clusters": 4,
+    "n_noise": 0
+  }
+}

@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Lab2: часть 1 (PCA, SVD, ICA)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/run_part1.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONIOENCODING": "utf-8"
+            }
+        },
+        {
+            "name": "Lab2: часть 2 (кластеризация)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/run_part2.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONIOENCODING": "utf-8"
+            }
+        },
+        {
+            "name": "Lab2: всё и отчёт",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/run_all.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONIOENCODING": "utf-8"
+            }
+        },
+        {
+            "name": "Lab2: только отчёт",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/build_report.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONIOENCODING": "utf-8"
+            }
+        }
+    ]
+}
